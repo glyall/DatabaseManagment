@@ -49,4 +49,10 @@ where c.city = a.city
 --7 Show the name and city of customers who live in the city that makes the fewest different 
 --kinds of products.(Hint:Use count and group b on the products table.)
 
+Select c.name, c.city 
+From customers c 
+where c.city in (Select city 
+		from products 
+		group by city 
+		order by count (pid) ASC limit 1)
 

@@ -20,19 +20,18 @@ where priceUSD > (Select avg(priceUSD)
 		  from products)
 
 --3. Display thhe customers name, pid ordered, and the total of all ordered sorted by highest to lowest. 
-Select c.name, o.pid, sum (o.totalUSD)
+Select c.name, o.pid, sum (o.dollars)
 from customers c
 Inner join orders o ON c.cid = o.cid 
 Group by c.name , o.pid
-Order by sum(o.totalUSD) DESC;
+Order by sum(o.dollars) DESC;
 --4. Display all customers names (in alphabetical order) and their total ordered and nothing more. Use coalesce to avoid showing "NULLs".
-Select custoemrs,names sum (coalesce (orders.totalUSD))
-From customers 
-Left Join orders 
-on Customers.cid=orders.cid 
-Group by orders.cid,customers.name 
-order by customers.name ASC;
---Still working on #4 
+Select c.name, o.pid ,COALESCE(sum(o.dollars),0.00)
+from customers c 
+Inner Join orders o 
+On c.cid=o.cid
+Group By o.pid, c.name
+Order by sum (o.dollars) DESC;
 --5. Diplay the names of all custumers who bought products from agents base in tokyo along with the name of the product there ordered 
 --and the name of the agents who sold it to them
 Select customers.name , products.name, agents.name 

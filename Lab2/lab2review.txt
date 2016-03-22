@@ -1,0 +1,42 @@
+8 pts
+
+1. 
+
+Evidence looks ok.
+
+You could have joined the screenshots for better organization.
+
+
+2.
+
+Sufficient knowledge of the terms primary key, candidate key, and superkey.
+
+Google.com is not a valid source, and even if it was, it is incorrectly cited.
+Avoid using it again, in this and any other classes, or cite it properly.
+
+
+3.
+
+By -null- you mean -not null-? Also there are some missing parenthesis.
+
+You might have the wrong concept of what -nullable- means. Can a student have
+no name?
+
+You did not discuss what fields were -nullable-.
+
+
+4.
+
+The ``frist normal form'' has nothing to do with primary keys. Please check
+your notes and the textbook Chapter 6.1.
+
+The ``access rows by content only'' rule explanation is wrong. Please check
+your notes or the book Chapter 6.1.
+
+The ``all rows must be unique'' rule is wrong. Please check your class notes or
+Chapter 6.1 of the textbook.
+
+You have several typos.
+
+
+- Dr. Rivas

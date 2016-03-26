@@ -1,0 +1,32 @@
+8 pts
+
+SQL statements are readable
+Correct output for some queries
+Mostly correct SQL statements
+
+
+6. List all data for products not in Dallas or Duluth that cost US$1 or more.
+
+Incorrect output
+- It seems like you did not read the correct instructions for this query. Read
+  it again, please.
+
+
+8. List all data for orders in February less than US$500.
+
+Incorrect SQL statement
+- It seems like you forgot a semicolon! Your query produces an error!
+   ERROR:  syntax error at or near "Select"
+   LINE 1: ... from orders  where mon =('feb') and dollars <500 Select *  ...
+                                                                ^
+
+In general: 
+
+- Test all your SQL statements.
+
+- Make sure you read all the instructions for queries really well.
+
+- Make sure you have semicolons at the end of each of your queries.
+
+
+- Dr. Rivas
